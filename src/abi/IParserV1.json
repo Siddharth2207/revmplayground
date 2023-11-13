@@ -1,0 +1,334 @@
+{
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "bytes",
+            "name": "data",
+            "type": "bytes"
+          }
+        ],
+        "name": "parse",
+        "outputs": [
+          {
+            "internalType": "bytes",
+            "name": "bytecode",
+            "type": "bytes"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "constants",
+            "type": "uint256[]"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+      }
+    ],
+    "bytecode": {
+      "object": "0x",
+      "sourceMap": "",
+      "linkReferences": {}
+    },
+    "deployedBytecode": {
+      "object": "0x",
+      "sourceMap": "",
+      "linkReferences": {}
+    },
+    "methodIdentifiers": {
+      "parse(bytes)": "fab4087a"
+    },
+    "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"parse\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"bytecode\",\"type\":\"bytes\"},{\"internalType\":\"uint256[]\",\"name\":\"constants\",\"type\":\"uint256[]\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"parse(bytes)\":{\"params\":{\"data\":\"The Rainlang bytes to parse.\"},\"returns\":{\"bytecode\":\"The expressions that can be evaluated.\",\"constants\":\"The constants that can be referenced by sources.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"parse(bytes)\":{\"notice\":\"Parses a Rainlang string into an evaluable expression. MUST be deterministic and MUST NOT have side effects. The only inputs are the Rainlang string and the parse meta. MAY revert if the Rainlang string is invalid. This function takes `bytes` instead of `string` to allow for definitions of \\\"string\\\" other than UTF-8.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/rain.interpreter/src/interface/IParserV1.sol\":\"IParserV1\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"appendCBOR\":false,\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":true,\"runs\":1000000},\"remappings\":[\":@prb/test/=lib/rain.interpreter/lib/prb-math/lib/prb-test/src/\",\":bitwise/=lib/rain.interpreter/src/lib/bitwise/\",\":bytecode/=lib/rain.interpreter/src/lib/bytecode/\",\":caller/=lib/rain.interpreter/src/lib/caller/\",\":compile/=lib/rain.interpreter/src/lib/compile/\",\":ds-test/=lib/rain.interpreter/lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/rain.interpreter/lib/openzeppelin-contracts/lib/erc4626-tests/\",\":eval/=lib/rain.interpreter/src/lib/eval/\",\":extern/=lib/rain.interpreter/src/lib/extern/\",\":forge-std/=lib/rain.interpreter/lib/forge-std/src/\",\":integrity/=lib/rain.interpreter/src/lib/integrity/\",\":ns/=lib/rain.interpreter/src/lib/ns/\",\":op/=lib/rain.interpreter/src/lib/op/\",\":openzeppelin-contracts/=lib/rain.interpreter/lib/openzeppelin-contracts/\",\":openzeppelin/=lib/rain.interpreter/lib/openzeppelin-contracts/contracts/\",\":parse/=lib/rain.interpreter/src/lib/parse/\",\":prb-math/=lib/rain.interpreter/lib/prb-math/src/\",\":prb-test/=lib/rain.interpreter/lib/prb-math/lib/prb-test/src/\",\":rain.chainlink/=lib/rain.interpreter/lib/rain.chainlink/src/\",\":rain.datacontract/=lib/rain.interpreter/lib/rain.datacontract/src/\",\":rain.erc1820/=lib/rain.interpreter/lib/rain.erc1820/src/\",\":rain.interpreter/=lib/rain.interpreter/\",\":rain.lib.hash/=lib/rain.interpreter/lib/rain.lib.memkv/lib/rain.lib.hash/src/\",\":rain.lib.memkv/=lib/rain.interpreter/lib/rain.lib.memkv/src/\",\":rain.lib.typecast/=lib/rain.lib.typecast/src/\",\":rain.math.fixedpoint/=lib/rain.interpreter/lib/rain.math.fixedpoint/src/\",\":rain.math.saturating/=lib/rain.interpreter/lib/rain.math.fixedpoint/lib/rain.math.saturating/src/\",\":rain.metadata/=lib/rain.interpreter/lib/rain.metadata/src/\",\":rain.solmem/=lib/rain.solmem/src/\",\":sol.lib.binmaskflag/=lib/rain.interpreter/lib/sol.lib.binmaskflag/src/\",\":state/=lib/rain.interpreter/src/lib/state/\",\":uniswap/=lib/rain.interpreter/src/lib/uniswap/\",\":v2-core/=lib/rain.interpreter/lib/v2-core/contracts/\",\":v2-periphery/=lib/v2-periphery/contracts/\"]},\"sources\":{\"lib/rain.interpreter/src/interface/IParserV1.sol\":{\"keccak256\":\"0x647a88e4b5b6486e5d846eaa32cd438b406c65781bb9845eec4ef86c033286f5\",\"license\":\"CAL\",\"urls\":[\"bzz-raw://c1caf890fa97f5f07b3ea5b536acb76214c5d3bc784852a46bd405bb90b90b27\",\"dweb:/ipfs/Qme7pMWjKkNv42WtjDHQE4C2u33p3oDcwf7jvYKnMMAk6J\"]}},\"version\":1}",
+    "metadata": {
+      "compiler": {
+        "version": "0.8.19+commit.7dd6d404"
+      },
+      "language": "Solidity",
+      "output": {
+        "abi": [
+          {
+            "inputs": [
+              {
+                "internalType": "bytes",
+                "name": "data",
+                "type": "bytes"
+              }
+            ],
+            "stateMutability": "pure",
+            "type": "function",
+            "name": "parse",
+            "outputs": [
+              {
+                "internalType": "bytes",
+                "name": "bytecode",
+                "type": "bytes"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "constants",
+                "type": "uint256[]"
+              }
+            ]
+          }
+        ],
+        "devdoc": {
+          "kind": "dev",
+          "methods": {
+            "parse(bytes)": {
+              "params": {
+                "data": "The Rainlang bytes to parse."
+              },
+              "returns": {
+                "bytecode": "The expressions that can be evaluated.",
+                "constants": "The constants that can be referenced by sources."
+              }
+            }
+          },
+          "version": 1
+        },
+        "userdoc": {
+          "kind": "user",
+          "methods": {
+            "parse(bytes)": {
+              "notice": "Parses a Rainlang string into an evaluable expression. MUST be deterministic and MUST NOT have side effects. The only inputs are the Rainlang string and the parse meta. MAY revert if the Rainlang string is invalid. This function takes `bytes` instead of `string` to allow for definitions of \"string\" other than UTF-8."
+            }
+          },
+          "version": 1
+        }
+      },
+      "settings": {
+        "remappings": [
+          "@prb/test/=lib/rain.interpreter/lib/prb-math/lib/prb-test/src/",
+          "bitwise/=lib/rain.interpreter/src/lib/bitwise/",
+          "bytecode/=lib/rain.interpreter/src/lib/bytecode/",
+          "caller/=lib/rain.interpreter/src/lib/caller/",
+          "compile/=lib/rain.interpreter/src/lib/compile/",
+          "ds-test/=lib/rain.interpreter/lib/forge-std/lib/ds-test/src/",
+          "erc4626-tests/=lib/rain.interpreter/lib/openzeppelin-contracts/lib/erc4626-tests/",
+          "eval/=lib/rain.interpreter/src/lib/eval/",
+          "extern/=lib/rain.interpreter/src/lib/extern/",
+          "forge-std/=lib/rain.interpreter/lib/forge-std/src/",
+          "integrity/=lib/rain.interpreter/src/lib/integrity/",
+          "ns/=lib/rain.interpreter/src/lib/ns/",
+          "op/=lib/rain.interpreter/src/lib/op/",
+          "openzeppelin-contracts/=lib/rain.interpreter/lib/openzeppelin-contracts/",
+          "openzeppelin/=lib/rain.interpreter/lib/openzeppelin-contracts/contracts/",
+          "parse/=lib/rain.interpreter/src/lib/parse/",
+          "prb-math/=lib/rain.interpreter/lib/prb-math/src/",
+          "prb-test/=lib/rain.interpreter/lib/prb-math/lib/prb-test/src/",
+          "rain.chainlink/=lib/rain.interpreter/lib/rain.chainlink/src/",
+          "rain.datacontract/=lib/rain.interpreter/lib/rain.datacontract/src/",
+          "rain.erc1820/=lib/rain.interpreter/lib/rain.erc1820/src/",
+          "rain.interpreter/=lib/rain.interpreter/",
+          "rain.lib.hash/=lib/rain.interpreter/lib/rain.lib.memkv/lib/rain.lib.hash/src/",
+          "rain.lib.memkv/=lib/rain.interpreter/lib/rain.lib.memkv/src/",
+          "rain.lib.typecast/=lib/rain.lib.typecast/src/",
+          "rain.math.fixedpoint/=lib/rain.interpreter/lib/rain.math.fixedpoint/src/",
+          "rain.math.saturating/=lib/rain.interpreter/lib/rain.math.fixedpoint/lib/rain.math.saturating/src/",
+          "rain.metadata/=lib/rain.interpreter/lib/rain.metadata/src/",
+          "rain.solmem/=lib/rain.solmem/src/",
+          "sol.lib.binmaskflag/=lib/rain.interpreter/lib/sol.lib.binmaskflag/src/",
+          "state/=lib/rain.interpreter/src/lib/state/",
+          "uniswap/=lib/rain.interpreter/src/lib/uniswap/",
+          "v2-core/=lib/rain.interpreter/lib/v2-core/contracts/",
+          "v2-periphery/=lib/v2-periphery/contracts/"
+        ],
+        "optimizer": {
+          "enabled": true,
+          "runs": 1000000
+        },
+        "metadata": {
+          "bytecodeHash": "none",
+          "appendCBOR": false
+        },
+        "compilationTarget": {
+          "lib/rain.interpreter/src/interface/IParserV1.sol": "IParserV1"
+        },
+        "libraries": {}
+      },
+      "sources": {
+        "lib/rain.interpreter/src/interface/IParserV1.sol": {
+          "keccak256": "0x647a88e4b5b6486e5d846eaa32cd438b406c65781bb9845eec4ef86c033286f5",
+          "urls": [
+            "bzz-raw://c1caf890fa97f5f07b3ea5b536acb76214c5d3bc784852a46bd405bb90b90b27",
+            "dweb:/ipfs/Qme7pMWjKkNv42WtjDHQE4C2u33p3oDcwf7jvYKnMMAk6J"
+          ],
+          "license": "CAL"
+        }
+      },
+      "version": 1
+    },
+    "ast": {
+      "absolutePath": "lib/rain.interpreter/src/interface/IParserV1.sol",
+      "id": 54208,
+      "exportedSymbols": {
+        "IParserV1": [
+          54207
+        ]
+      },
+      "nodeType": "SourceUnit",
+      "src": "32:715:71",
+      "nodes": [
+        {
+          "id": 54195,
+          "nodeType": "PragmaDirective",
+          "src": "32:24:71",
+          "nodes": [],
+          "literals": [
+            "solidity",
+            "^",
+            "0.8",
+            ".18"
+          ]
+        },
+        {
+          "id": 54207,
+          "nodeType": "ContractDefinition",
+          "src": "58:688:71",
+          "nodes": [
+            {
+              "id": 54206,
+              "nodeType": "FunctionDefinition",
+              "src": "630:114:71",
+              "nodes": [],
+              "documentation": {
+                "id": 54196,
+                "nodeType": "StructuredDocumentation",
+                "src": "84:541:71",
+                "text": "Parses a Rainlang string into an evaluable expression. MUST be\n deterministic and MUST NOT have side effects. The only inputs are the\n Rainlang string and the parse meta. MAY revert if the Rainlang string\n is invalid. This function takes `bytes` instead of `string` to allow\n for definitions of \"string\" other than UTF-8.\n @param data The Rainlang bytes to parse.\n @return bytecode The expressions that can be evaluated.\n @return constants The constants that can be referenced by sources."
+              },
+              "functionSelector": "fab4087a",
+              "implemented": false,
+              "kind": "function",
+              "modifiers": [],
+              "name": "parse",
+              "nameLocation": "639:5:71",
+              "parameters": {
+                "id": 54199,
+                "nodeType": "ParameterList",
+                "parameters": [
+                  {
+                    "constant": false,
+                    "id": 54198,
+                    "mutability": "mutable",
+                    "name": "data",
+                    "nameLocation": "660:4:71",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 54206,
+                    "src": "645:19:71",
+                    "stateVariable": false,
+                    "storageLocation": "calldata",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_calldata_ptr",
+                      "typeString": "bytes"
+                    },
+                    "typeName": {
+                      "id": 54197,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "645:5:71",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "src": "644:21:71"
+              },
+              "returnParameters": {
+                "id": 54205,
+                "nodeType": "ParameterList",
+                "parameters": [
+                  {
+                    "constant": false,
+                    "id": 54201,
+                    "mutability": "mutable",
+                    "name": "bytecode",
+                    "nameLocation": "704:8:71",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 54206,
+                    "src": "689:23:71",
+                    "stateVariable": false,
+                    "storageLocation": "calldata",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_calldata_ptr",
+                      "typeString": "bytes"
+                    },
+                    "typeName": {
+                      "id": 54200,
+                      "name": "bytes",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "689:5:71",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes_storage_ptr",
+                        "typeString": "bytes"
+                      }
+                    },
+                    "visibility": "internal"
+                  },
+                  {
+                    "constant": false,
+                    "id": 54204,
+                    "mutability": "mutable",
+                    "name": "constants",
+                    "nameLocation": "733:9:71",
+                    "nodeType": "VariableDeclaration",
+                    "scope": 54206,
+                    "src": "714:28:71",
+                    "stateVariable": false,
+                    "storageLocation": "calldata",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_calldata_ptr",
+                      "typeString": "uint256[]"
+                    },
+                    "typeName": {
+                      "baseType": {
+                        "id": 54202,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "714:7:71",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 54203,
+                      "nodeType": "ArrayTypeName",
+                      "src": "714:9:71",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                        "typeString": "uint256[]"
+                      }
+                    },
+                    "visibility": "internal"
+                  }
+                ],
+                "src": "688:55:71"
+              },
+              "scope": 54207,
+              "stateMutability": "pure",
+              "virtual": false,
+              "visibility": "external"
+            }
+          ],
+          "abstract": false,
+          "baseContracts": [],
+          "canonicalName": "IParserV1",
+          "contractDependencies": [],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            54207
+          ],
+          "name": "IParserV1",
+          "nameLocation": "68:9:71",
+          "scope": 54208,
+          "usedErrors": []
+        }
+      ],
+      "license": "CAL"
+    },
+    "id": 71
+  }
